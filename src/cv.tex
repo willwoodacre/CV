@@ -1,0 +1,148 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[cm]{fullpage} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{0pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge William Woodacre}\bigskip\par} % Your name
+
+%\section{Personal Data}
+
+%\begin{tabular}{rl}
+{\centering
+  Email: wjw15@ic.ac.uk\par
+}
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{14cm}}
+\textsc{Jul 2017-Sep 2017} & Research Placement - Large Scale Distributed Systems Group, Imperial College London  \emph{}\\
+& \footnotesize{Worked as a group member on a team working on projects with Intel SGX technology - allowing processes to run secure from the kernel in an enclave. Contributed to a paper setting out to compartmentalise a process within an enclave using compiler and runtime techniques (using C, C++ and Python).}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2015-Aug 2015} & Summer Intern - Renishaw PLC, Wotton-Under-Edge \emph{}\\ 
+& \footnotesize{Developed a system to update the firmware running on an ARM micro-controller over a USB connection. Improved the existing C\# client, as well as programming embedded C on the micro-controller.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jul 2014-Aug 2014} & Summer Intern - Renishaw PLC, Wotton-Under-Edge \emph{}\\
+& \footnotesize{Developed a PCB board capable of generating varying waveforms to be used for testing other designs. The board could be connected to an FPGA which could configure the waveform to be produced. As an extension of my project, I wrote a VHDL module for the FPGA to talk to my PCB over an SPI interface.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jul 2012} & Work Experience Placement - ST Microelectronics, Bristol \emph{}\\
+& \footnotesize{Shadowed several engineers working in verification, System-On-Chip design and platform security.}
+%gaining an insight into working in technology and building on my knowledge of computing and computer systems.
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{(UNDERGRADUATE)} & Computing MEng, \textbf{Imperial College London}\\
+\textsc{Graduating 2019} 
+& \footnotesize{Year 2 overall grade: 1$^{st}$ (Year 1+2 avg 80\%)} \\
+& \footnotesize{Year 1 overall grade: 1$^{st}$} \\
+& \\
+
+%------------------------------------------------
+
+\textsc{Jul 2015} & A Levels and GCSES, \textbf{Hardenhuish School} \\
+& \footnotesize{A levels - Maths, Further Maths, Physics, EPQ: A*A*A*A  | STEP - STEP I: Grade 2 }\\
+& \footnotesize{AS levels - Computing, Critical Thinking: AA}\\
+& \footnotesize{GCSES - 9 A*'s, 1 A}\\
+&\\
+
+%------------------------------------------------
+
+
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Certificates}
+
+\begin{tabular}{rl}
+\textsc{Mar 2016} & Best Computing Topics Project \\
+\textsc{Aug 2013 - Aug 2015} & Arkwright Engineering Scholarship \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{tabular}{r|p{15cm}}
+\textsc{Oct 2017} & Etheroscope - A Ethereum smart contract viewer \\
+& \footnotesize{Currently developing a web based smart contract viewer, using Node JS, so that users who know nothing about Ethereum can view the state of a smart contract over time. Done in association with the startup Alice.si that is using smart contracts to deliver more transparency to the charity sector.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jun 2017} & Pamoja - A competitive coding platform \\
+& \footnotesize{Developed a website, using Node JS, where users of any experience level can build on their coding skills by coding competitively against other users using Python. The website emphasises scoring on the code quality, not just correctness, which is an important skill for programmers to learn for industry.} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jun 2016} & Bare Metal Raspberry Pi Pacman\\
+& \footnotesize{Developed a Pac-Man game in C without an OS on a Raspberry Pi in a group of four. The challenges of this project included setting up and managing a framebuffer with the GPU and programming the ghost's AI.} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Mar 2015} & Parallel Travelling Salesman Problem Solver\\
+& \footnotesize{As part of my EPQ A level project, I developed a program to solve the travelling salesman problem over a cluster of four Raspberry Pis using C and the open MPI library. }
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	References 
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+\begin{tabular}{rl}
+Academic tutor: Alessio Lomuscio - a.lomuscio@imperial.ac.uk
+
+\end{tabular}
+\begin{center}
+
+\end{center}
+\end{document}

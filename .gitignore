@@ -1,0 +1,7 @@
+# Output files
+*.aux
+*.log
+*.out
+
+# Vim
+*.swp
