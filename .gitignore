@@ -2,6 +2,8 @@
 *.aux
 *.log
 *.out
+*.gz
+src/*.pdf
 
 # Vim
 *.swp
